@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "ProductDetail";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">Detalle de producto</h1>
+    <div class="card">
+        <div class="card-header bg-dark text-white">
+            Información del Producto
+        </div>
+        <div class="card-body">
+            <!-- Nombre del Producto -->
+           
+            <div class="row mb-3">
+                <div class="col-md-4 font-weight-bold">Nombre del Producto:</div>
+                <div class="col-md-8">lAPTOP</div>
+            </div>
+            <!-- Precio -->
+            <div class="row mb-3">
+                <div class="col-md-4 font-weight-bold">Precio:</div>
+                <div class="col-md-8">$1200.00</div>
+            </div>
+            <!-- Categoría -->
+            <div class="row mb-3">
+                <div class="col-md-4 font-weight-bold">Categoría:</div>
+                <div class="col-md-8">Laptops</div>
+            </div>
+            <!-- Cantidad Vendida -->
+            <div class="row mb-3">
+                <div class="col-md-4 font-weight-bold">Cantidad Vendida:</div>
+                <div class="col-md-8">50</div>
+            </div>
+            <!-- Cantidad en Stock -->
+            <div class="row mb-3">
+                <div class="col-md-4 font-weight-bold">Cantidad en Stock:</div>
+                <div class="col-md-8">20</div>
+            </div>
+        </div>
+        <div class="card-footer text-center">
+
+            <a class="btn btn-secondary" href="/GestionProductos/ProductList">
+                <i class="fas fa-arrow-left"></i> Regresar
+            </a>
+            <a class="btn btn-warning" href="/GestionProductos/ProductEdit">
+                <i class="fas fa-edit"></i> Editar Producto
+            </a>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,78 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-12 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    Gestion de productos
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-primary mb-3">
+                                <h5> <a href="/GestionProductos/CreateProduct" class="btn btn-block">&nbsp;<i class="fa-solid fa-plus"></i> Crear producto</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-primary mb-3">
+                                <h5><a href="/GestionProductos/ProductList" class="btn btn-block">&nbsp;<i class="fa-regular fa-eye"></i> Ver productos</a></h5>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 col-12">
+            <div class="card">
+                <div class="card-header">
+                    Buscar productos
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-success mb-3">
+                                <h5> <a href="/BuscarProductos/ProductSearch" class="btn btn-block">&nbsp;<i class="fa-solid fa-magnifying-glass"></i> Buscar productos</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-success mb-3">
+                                <h5> <a href="/BuscarProductos/ProductFilter" class="btn btn-block">&nbsp;<i class="fa-solid fa-filter"></i> Filtrar productos</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-12 col-12">
+            <div class="card">
+                <div class="card-header">
+                    Informes y Estadísticas
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-warning mb-3">
+                                <h5> <a href="/InformesEstadisticas/ProductoInformes" class="btn btn-block">&nbsp;<i class="fas fa-file-alt"></i> Informe productos</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-warning mb-3">
+                                <h5> <a href="/InformesEstadisticas/ProductoEstadistica" class="btn btn-block">&nbsp;<i class="fas fa-chart-line"></i> Estadistica productos</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

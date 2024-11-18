@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "ProductEdit";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">Editar producto</h1>
+    <form autocomplete="off">
+
+        <div class="form-group">
+            <label for="nombreProducto">Nombre del Producto</label>
+            <input type="text" class="form-control" id="nombreProducto" placeholder="Ingrese el nombre del producto" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="precioProducto">Precio ($)</label>
+            <input type="number" class="form-control" id="precioProducto" placeholder="Ingrese el precio del producto" required>
+        </div>
+
+        <div class="form-group">
+            <label for="categoriaProducto">Categoría</label>
+            <select class="form-control" id="categoriaProducto" required>
+                <option value="" disabled selected>Seleccione una categoría</option>
+                <option value="laptops">Laptops</option>
+                <option value="smartphones">Smartphones</option>
+                <option value="accesorios">Accesorios</option>
+                <option value="perifericos">Periféricos</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcionProducto">Descripción</label>
+            <textarea class="form-control" id="descripcionProducto" rows="3" placeholder="Ingrese una breve descripción del producto" required></textarea>
+        </div>
+
+        <div class="text-center">
+            <a class="btn btn-secondary" href="/GestionProductos/ProductList"><i class="fas fa-arrow-left"></i> Regresar</a>
+            <button type="submit" class="btn btn-primary">Actualizar Producto</button>
+        </div>
+    </form>
+</div>
+

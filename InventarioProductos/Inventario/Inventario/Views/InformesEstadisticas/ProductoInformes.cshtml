@@ -1,0 +1,59 @@
+﻿
+@{
+    ViewBag.Title = "Informe de productos";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<h2>ProductoInformes</h2>
+
+<div class="container">
+    <h1 class="text-center mb-4">@ViewBag.Title</h1>
+
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    Reportes de Ventas
+                </div>
+                <div class="card-body">
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-info mb-3">
+                                <h5> <a href="/ReportesVentas/InformeVentas" class="btn btn-block">&nbsp;<i class="fas fa-file-alt"></i> Informe de Ventas</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-info mb-3">
+                                <h5><a href="/ReportesVentas/EstadisticasVentas" class="btn btn-block">&nbsp;<i class="fas fa-chart-line"></i> Estadísticas de Ventas</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card border-danger mb-3">
+                                <h5> <a href="/ReportesVentas/TopProductos" class="btn btn-block">&nbsp;<i class="fas fa-star"></i> Top Productos Vendidos</a></h5>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card border-danger mb-3">
+                                <h5><a href="/ReportesVentas/UltimasVentas" class="btn btn-block">&nbsp;<i class="fas fa-clock"></i> Últimas Ventas</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card border-success mb-3">
+                                <h5> <a href="/ReportesVentas/ReporteGeneral" class="btn btn-block">&nbsp;<i class="fas fa-chart-bar"></i> Reporte General</a></h5>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

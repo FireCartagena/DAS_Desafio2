@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewBag.Title = "Filtrar producto";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">@ViewBag.Title</h1>
+
+    <form id="filterForm" onsubmit="filtrarProductos(event)">
+        <div class="row">
+            <!-- Filtro por rango de precios -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="precioMin">Precio Mínimo:</label>
+                    <input type="number" id="precioMin" class="form-control" placeholder="Ejemplo: 100" min="0" required>
+                </div>
+            </div>
+            <!-- Filtro por rango de cantidades -->
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="cantidadMin">Cantidad Mínima:</label>
+                    <input type="number" id="cantidadMin" class="form-control" placeholder="Ejemplo: 10" min="0" required>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">
+                <i class="fas fa-filter"></i> Filtrar
+            </button>
+        </div>
+    </form>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <a class="btn btn-secondary" href="/Home/Index">
+                <i class="fas fa-arrow-left"></i> Regresar
+            </a>
+        </div>
+    </div>
+
+    <div id="resultados" class="mt-4">
+        <h4>Resultados encontrados:</h4>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <strong>Nombre</strong> - Categoria
+                    <br><small>Precio: $10.00</small>
+                </div>
+                <a class="btn btn-success btn-sm" href="/GestionProductos/ProductDetail">
+                    <i class="fa-solid fa-eye"></i> Detalle
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+

@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Buscar producto";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">@ViewBag.Title</h1>
+    <form id="searchForm" onsubmit="buscarProducto(event)">
+        <div class="form-group">
+            <label for="searchInput">Buscar por Nombre del producto:</label>
+            <div class="input-group">
+                <input type="text" id="searchInput" class="form-control" placeholder="Ingrese nombre o categoría" required>
+                <div class="input-group-append">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-search"></i> Buscar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="row mb-3">
+        <div class="col-12">
+            <a class="btn btn-secondary" href="/Home/Index">
+                <i class="fas fa-arrow-left"></i> Regresar
+             </a>
+        </div>
+    </div>
+
+    <div id="resultados" class="mt-4">
+        <h4>Resultados encontrados:</h4>
+        <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <div>
+                    <strong>Nombre</strong> - Categoria
+                    <br><small>Precio: $10.00</small>
+                </div>
+                <a class="btn btn-success btn-sm" href="/GestionProductos/ProductDetail">
+                    <i class="fa-solid fa-eye"></i> Detalle
+                </a>
+            </li>
+        </ul>
+    </div>
+
+</div>

@@ -1,0 +1,43 @@
+﻿@model List<Inventario.Productos>
+
+@{
+    ViewBag.Title = "Lista de Productos";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <h1 class="text-center mb-4">Listado de Productos</h1>
+
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>#</th>
+                    <th>Nombre</th>
+                    <th>Categoría</th>
+                    <th>Precio</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Laptop Acer</td>
+                    <td>Laptop</td>
+                    <td>$ 1250.00</td>
+                    <td>
+                        <a class="btn btn-warning btn-sm" href="/GestionProductos/ProductEdit/?idProduct=1">
+                            <i class="fas fa-edit"></i> Editar
+                        </a>
+                        <a class="btn btn-success btn-sm" href="/GestionProductos/ProductDetail/?idProduct=1">
+                            <i class="fa-solid fa-eye"></i> Detalle
+                        </a>
+                        <a class="btn btn-danger btn-sm" href="/GestionProductos/ProductDelete/?idProduct=1">
+                            <i class="fas fa-trash-alt"></i> Eliminar
+                        </a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

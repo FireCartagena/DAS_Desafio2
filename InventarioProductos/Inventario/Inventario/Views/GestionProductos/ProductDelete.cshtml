@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "ProductDelete";
+    Layout = "~/Views/Shared/_LayoutGral.cshtml";
+}
+
+<div class="container">
+    <div class="container mt-5 text-center">
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">¡Producto Eliminado!</h4>
+            <p>El producto se eliminó correctamente de la base de datos.</p>
+            <hr>
+            <a class="btn btn-secondary" href="/GestionProductos/ProductList">
+                <i class="fas fa-arrow-left"></i> Regresar al listado
+                </a>
+        </div>
+    </div>
+
+    <div class="container mt-5 text-center">
+        <div class="alert alert-danger" role="alert">
+            <h4 class="alert-heading">Error al Eliminar</h4>
+            <p>No se pudo eliminar el producto. Por favor, inténtelo nuevamente.</p>
+            <hr>
+            <a class="btn btn-secondary" href="/GestionProductos/ProductList">
+                <i class="fas fa-arrow-left"></i> Regresar al listado
+            </a>
+        </div>
+    </div>
+
+</div>
